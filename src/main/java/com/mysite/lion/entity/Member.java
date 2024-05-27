@@ -16,7 +16,7 @@ public class Member {
     @Column(name = "member_id", nullable=false)
     private String id;
 
-    @Column(name = "member_password", nullable = false)
+    @Column(name = "member_password12", nullable = false)
     private String password;
 
     @Column(name = "member_name", nullable = false)
