@@ -39,10 +39,10 @@ public class ApiController {
         return productService.findAll();
     }
 
-//    @GetMapping("/products")
-//    public List<Product> productFindByName(@RequestParam String name){
-//        return productService.findByName(name);
-//    }
+    @GetMapping("/products/find")
+    public List<Product> productFindByName(@RequestParam("keyword") String keyword){
+        return productService.findByKeyword(keyword);
+    }
     @PostMapping("/product/new")
     public ResponseEntity<String> saveProduct(ProductDTO formDTO){
         return productService.save(formDTO);

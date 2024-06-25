@@ -9,5 +9,7 @@ import java.util.List;
 public interface ProductService {
     public List<Product> findAll();
     public List<Product> findByName(String name);
+    public List<Product> findByKeyword(String keyword);
     public ResponseEntity<String> save(ProductDTO formDTO);
+
 }

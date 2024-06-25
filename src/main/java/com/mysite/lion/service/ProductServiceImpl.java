@@ -28,6 +28,11 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    public List<Product> findByKeyword(String keyword) {
+        return productRepository.findByNameContaining(keyword);
+    }
+
+    @Override
     public ResponseEntity<String> save(ProductDTO formDTO){
         Product newProduct = Product.builder()
                 .name(formDTO.getName())
