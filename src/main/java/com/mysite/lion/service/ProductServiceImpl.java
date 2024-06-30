@@ -40,7 +40,7 @@ public class ProductServiceImpl implements ProductService {
                 .description(formDTO.getDescription())
                 .stock(formDTO.getStock())
                 .sellerId(formDTO.getSellerId())
-                .thumbnail(formDTO.getProductThumbnail())
+                .thumbnailId(formDTO.getProductThumbnailId())
                 .build();
         productRepository.save(newProduct);
         return new ResponseEntity<>("success", HttpStatus.OK);

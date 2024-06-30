@@ -14,10 +14,10 @@ import org.hibernate.annotations.DynamicUpdate;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "product_id", nullable=false)
+    @NonNull
     private Long id;
 
-    @Column(name = "product_name", nullable=false)
+    @NonNull
     private String name;
 
     private String description;
@@ -31,7 +31,7 @@ public class Product {
 
     @OneToOne
     @JoinColumn(name = "thumbnail_id", referencedColumnName = "id")
-    private ProductThumbnail thumbnail; // FK
+    private ProductThumbnail thumbnailId; // FK
 
 
 }
