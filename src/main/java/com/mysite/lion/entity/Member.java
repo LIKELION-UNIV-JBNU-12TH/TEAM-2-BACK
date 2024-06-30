@@ -28,4 +28,7 @@ public class Member {
     @Column(name = "member_phone", nullable = false)
     private String phone;
 
+    @OneToOne
+    @JoinColumn(name = "member_Info_id", referencedColumnName = "id")
+    private MemberInfo memberInfoId;
 }
