@@ -31,7 +31,7 @@ public class Product {
 
     @OneToOne
     @JoinColumn(name = "thumbnail_id", referencedColumnName = "id")
-    private ProductThumbnail thumbnailId; // FK
+    private ProductThumbnail thumbnail; // FK
 
 
 }

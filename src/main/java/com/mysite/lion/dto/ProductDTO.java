@@ -13,5 +13,5 @@ public class ProductDTO {
     private Long price;
     private Long stock;
     private String sellerId;
-    private ProductThumbnail productThumbnailId;
+    private ProductThumbnail productThumbnail;
 }

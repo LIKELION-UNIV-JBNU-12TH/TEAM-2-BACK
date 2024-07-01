@@ -25,7 +25,11 @@ public class OrderList {
 
     @OneToOne
     @JoinColumn(name = "buyer_id", referencedColumnName = "member_id")
-    private Member buyerId;
+    private Member buyer;
+
+//    @OneToOne
+//    @JoinColumn(name = "seller_id", referencedColumnName = "member_id")
+//    private Member seller;
 
     @CreationTimestamp
     private LocalDateTime createDate;
