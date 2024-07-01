@@ -19,11 +19,11 @@ public class OrderList {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "product_id", referencedColumnName = "id")
     private Product product;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "buyer_id", referencedColumnName = "member_id")
     private Member buyer;
 

@@ -14,7 +14,6 @@ import org.hibernate.annotations.DynamicUpdate;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NonNull
     private Long id;
 
     @NonNull

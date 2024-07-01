@@ -29,7 +29,7 @@ public class ApiController {
 
     // Member
     @PostMapping("/signup")
-    public ResponseEntity<String> userSignup(@RequestBody SignUpDTO formDTO) {
+    public ResponseEntity<String> userSignup(SignUpDTO formDTO) {
         return memberService.signup(formDTO);
     }
 
